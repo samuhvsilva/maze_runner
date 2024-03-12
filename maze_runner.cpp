@@ -5,8 +5,8 @@
 char** maze; // Voce também pode representar o labirinto como um vetor de vetores de char (vector<vector<char>>)
 
 // Numero de linhas e colunas do labirinto
-int num_rows;
-int num_cols;
+int num_rows = 5;
+int num_cols = 5;
 
 // Representação de uma posição
 struct pos_t {
@@ -106,6 +106,7 @@ int main(int argc, char* argv[]) {
 	bool exit_found = walk(initial_pos);
 	
 	// Tratar o retorno (imprimir mensagem)
+	
 	
 	return 0;
 }
