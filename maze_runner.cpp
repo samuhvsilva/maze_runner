@@ -40,13 +40,12 @@ pos_t load_maze(const char* file_name) {
 	pos_t initial_pos;
 	// Abre o arquivo para leitura (fopen)
 
-	FILE *arquivo = fopen("leitura.txt", "w");
-	char texto[500];
 
 	// Le o numero de linhas e colunas (fscanf) 
-	fscanf(arquivo, "%s", texto);
-	printf("String: %s\n", texto);
+
 	// e salva em num_rows e num_cols
+	
+
 	
 	// Aloca a matriz maze (malloc)
 	for (int i = 0; i < num_rows; ++i)
