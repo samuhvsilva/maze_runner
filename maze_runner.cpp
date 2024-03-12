@@ -47,7 +47,7 @@ std::stack<pos_t> valid_positions;
 pos_t load_maze(const char* file_name) {
 	pos_t initial_pos;
 	// Abre o arquivo para leitura (fopen)
-	ifstream arquivo_leitura("maze.txt");
+	ifstream arquivo_leitura("/workspaces/maze_runner/data/maze.txt");
 
 	// Le o numero de linhas e colunas (fscanf) 
 	int num_atual_coluna;
