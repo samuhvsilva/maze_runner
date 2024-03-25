@@ -3,6 +3,7 @@
 #include <fstream>
 #include <iostream>
 #include <chrono>
+#include <thread>
 #include <string>
 
 using namespace std;
@@ -150,7 +151,6 @@ bool walk(pos_t pos)
 
 				system("clear||cls");
 				print_maze();
-				std::this_thread::sleep_for(std::chrono::milliseconds(100));
 				valid_positions.pop();
 			}
 		}
