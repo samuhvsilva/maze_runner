@@ -136,8 +136,22 @@ int main(int argc, char* argv[]) {
 	bool exit_found = walk(initial_pos);
 	
 	// Tratar o retorno (imprimir mensagem)
+    
+	
+	t.detach();
 
+    while (!exit_found) {
+        print_maze();
+        system("clear");
+    }
 
+    print_maze();
+	
+    if (!exit_found) {
+        cout << "A saída não foi encontrada!" << endl;
+    } else {
+        cout << "Saída encontrada!" << endl;
+    }
 	
 	return 0;
 }
